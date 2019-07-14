@@ -1,5 +1,5 @@
 .hero{
-    padding: 0 15px;
+    padding: 0;
     background-image: url(../images/hero.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero-text{
