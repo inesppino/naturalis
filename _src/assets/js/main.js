@@ -18,3 +18,15 @@ function goToSlide(n) {
 }
 
 playSlideshow();
+
+function addClassLit(){
+    const lithica = document.getElementById('li-cant');
+    lithica.classList.toggle('content-lithica');
+    lithica.classList.toggle('lithica');
+}
+
+function addClassLif(){
+    const life = document.getElementById('li-nat');
+    life.classList.toggle('content-natura');
+    life.classList.toggle('natura');
+}

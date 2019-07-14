@@ -6,7 +6,7 @@
 .subpart{
     position: absolute;
     width: 100%;
-    // background-color: $color-theme;
+    background-color: $color-theme;
     top: 0px;
     left: 0px;
     padding: 10px 20px;
@@ -20,7 +20,6 @@
 
 .wrapper-main{
     position: relative;
-    padding: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -30,11 +29,10 @@
 
 .mapa-canteras{
     width: 400px;
-    margin-left: 20px;
 }
 
 .first-part{
-    margin-top: 20px;
+    margin-top: 60px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -77,6 +75,20 @@ ul{
         opacity: 1;
         z-index: 2;
     }
+}
+
+#sentence-mares{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    width: 100%;
+    padding-left: 20px; 
+    transform: translateX(-50%);
+    background-color: rgba(238, 238, 236, 0.575);
+    font-family: $title-font;
+    font-size: 32px;
+    z-index: 4;
 }
 
 .cantera-img{
@@ -138,69 +150,90 @@ ul{
 
 //3 Reasons
 .second-part{
-    padding: 30px 15px 60px;
+    padding: 10px 20px;
     position: relative;
 }
 
-.second-main{
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.list-purchase{
-    padding: 0 55px;
-    margin: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-row-gap: 45px;
-
-}
-
-.secondtitle{
-    font-family: $title-font;
-    font-size: 18px;
-    text-align: center;
-}
-
-.description{
-    font-family: $text-font;
-    font-weight: 400;
-    font-size: 18px;
-    text-align: center;
-}
-
-.container-btn-reasons{
+.second-part-content{
     width: 100%;
-    height: 45px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    margin-top: 60px;
 }
 
-.btn-reasons{
-    text-align: center;
-    width: 184px;
-    height: 45px;
-    border-radius: 22.5px;
-    background-color: $color-theme;
-    color: $color-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: $component-font;
-    font-weight: 500;
-    font-size: 20px;
+.logo-img{
+    width: 400px;
+}
+
+.point-lithica{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20%;
     cursor: pointer;
-    transition: color ease .6s;
-    transition: background-color ease .6s;
-    
 }
 
-.btn-reasons:hover{
-    color: $color-theme;
-    background-color: $color-primary;
-    border: solid 2px $color-theme;
+.point-life{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20%;
+    left: 52%;
+    cursor: pointer;
+}
+
+.second-part-description{
+    width: 100%;
+    position: relative;
+    font-family: $title-font;
+}
+
+.second-part-description p {
+   margin: 0;
+}
+
+.lithica{
+    transition: 2s;
+    margin-left: 15%;
+}
+
+.content-lithica{
+    transition: 2s;
+    margin-left: -50%;
+}
+
+.natura{
+    transition: 2s;
+    margin-right: 20%;
+}
+
+.content-natura{
+    transition: 2s;
+    margin-right: -50%;
+}
+
+#li-nat{
+    text-align: right;
+}
+
+.title-description{
+    color: rgb(112,113,111);
+    font-family: $title-font;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.saber-mas{
+    font-size: 14px;
+    margin: 0;
+    color: rgb(235,73,8);
+}
+
+.third-part{
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
