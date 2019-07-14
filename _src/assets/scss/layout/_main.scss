@@ -118,28 +118,6 @@ ul{
     margin-left: 15px;
 }
 
-.container-go-there{
-    width: 76px;
-    height: 45px;
-    border-radius: 22.5px;
-    border: solid 2px $color-theme;
-    font-family: $component-font;
-    font-weight: 500;
-    font-size: 20px;
-    color: $color-theme;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: color ease .6s;
-    transition: background-color ease .6s;
-}
-
-.container-go-there:hover{
-    background-color: $color-theme;
-    color: $color-primary;
-}
-
 .time-line{
     width: 100%;
     margin-top: 10px;
@@ -152,7 +130,7 @@ ul{
 .second-part{
     padding: 10px 20px;
     position: relative;
-    height: 92vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,17 +154,18 @@ ul{
 
 .point-lithica{
     width: 150px;
-    height: 150px;
+    height: 185px;
     position: absolute;
-    top: 20%;
+    top: 26%;
     cursor: pointer;
+    z-index: 3;
 }
 
 .point-life{
     width: 150px;
-    height: 150px;
+    height: 180px;
     position: absolute;
-    top: 20%;
+    top: 27%;
     left: 52%;
     cursor: pointer;
 }
@@ -264,7 +243,22 @@ ul{
     justify-content: center;
 }
 
-.sections-project{
-    font-family: $title-font;
+.subtitle-section{
+    margin: 0;
 }
 
+.sections-project{
+    font-family: $title-font;
+    margin-top: 40px;
+}
+
+.section-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plaza-img{
+    width: 80%;
+}
