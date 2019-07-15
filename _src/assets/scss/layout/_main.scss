@@ -313,7 +313,7 @@ ul{
 
 .subtitle-section{
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
     font-weight: bold;
     margin: 0;
 }
@@ -400,7 +400,7 @@ ul{
     height: 500px;
     left: -200px;
     top: 100px;
-    border: 2px solid $color-theme;
+    border: 8px solid rgba(235,73,8,0.5);
     opacity: 0;
     z-index: 1;
 }
