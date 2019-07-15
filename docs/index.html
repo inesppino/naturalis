@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.png" />
+        <title>Naturalis-Safari Botánico</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Forum&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    
+    <body>
+        <header> <a href="#go-hero"><h1 class="main-name">Naturalis</h1></a>
+
+            <nav class="menu-nav"> <a class="menu-nav-link" href="#donde-estamos">¿Dónde estamos?</a>
+ <a class="menu-nav-link"
+                href="#quienes-somos">¿Quiénes somos?</a>
+ <a class="menu-nav-link" href="#que-es">¿Qué es?</a>
+
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div class="hero" id="go-hero">
+                    <div class="hero-text">
+                         <h1 class="hero-title">Naturalis</h1>
+
+                         <h2 class="hero-content"> Safari Botánico</h2>
+
+                    </div>
+                    <div class="btn--hero"> <a href="#donde-estamos"><img src="assets/images/ico-scroll-down.svg" alt="scroll-down-btn"></a>
+
+                    </div>
+                </div>
+            </section>
+            <section class="page__main">
+                <div class="wrapper-main"> <span class="donde-title subpart">¿Dónde estamos?</span>
+
+                    <div id="donde-estamos"
+                    class="anchor"></div>
+                    <div class="first-part">
+                         <h2 class="title-first-main"> Canteras de <span class="first-main">s'Hostal</span></h2>
+
+                        <img class="mapa-canteras" alt="mapa de Menorca" src="assets/images/mapa-canteras-act.png"
+                        />
+                        <p class="content-first-main">124 canteras
+                            <br>30 activas</br>
+                        </p>
+                    </div>
+                    <div class="time-line">
+                        <img class="diagrama-img" alt="diagrama" src="assets/images/diagrama-cantera.png"
+                        />
+                    </div>
+                    <ul class="carrousel">
+                        <p id="sentence-mares">"La arquitectura del marés es un recorrido por 25 siglos de Historia"</p>
+                        <li
+                        class="slide showing" id="cantera-1">
+                            <img class="cantera-img" alt="vista de cantera" src="assets/images/cantera1.png"
+                            />
+                            </li>
+                            <li class="slide" id="cantera-2">
+                                <img class="cantera-img" alt="vista de cantera" src="assets/images/cantera2.png"
+                                />
+                            </li>
+                            <li class="slide" id="cantera-3">
+                                <img class="cantera-img" alt="vista de cantera" src="assets/images/cantera3.png"
+                                />
+                            </li>
+                            <li class="slide" id="cantera-4">
+                                <img class="cantera-img" alt="vista de cantera" src="assets/images/cantera4.png"
+                                />
+                            </li>
+                            <li class="slide" id="cantera-5">
+                                <img class="cantera-img" alt="vista de cantera" src="assets/images/cantera5.png"
+                                />
+                            </li>
+                            <li class="slide" id="cantera-6">
+                                <img class="cantera-img" alt="vista de cantera" src="assets/images/cantera6.png"
+                                />
+                            </li>
+                    </ul>
+                </div>
+                <div class="second-part"> <span class="quienes-title subpart">¿Quiénes somos?</span>
+
+                    <div id="quienes-somos"
+                    class="anchor"></div>
+                    <div class="second-part-content">
+                        <div class="image-container">
+                            <div class="point-lithica" onclick="addClassLit()"></div>
+                            <img class="logo-img" alt="logo lithica y life natura" src="assets/images/logo-circulo.png"
+                            />
+                            <div class="point-life" onclick="addClassLif()"></div>
+                        </div>
+                        <div class="second-part-description">
+                            <div id="li-cant" class="content-lithica">
+                                 <h3 class="title-description">Lithica</h3>
+
+                                <p>Rehabilitación de las canteras de las Pedreres de s'Hostal</p> <a class="saber-mas"
+                                target="_blank" href="http://lithica.es/lithica/">Saber más</a>
+
+                            </div>
+                            <div id="li-nat" class="content-natura">
+                                 <h3 class="title-description">Life-Natura</h3>
+
+                                <p>Conservación de la flora amenazada en Menorca</p> <a class="saber-mas"
+                                target="_blank" href="http://www.biosferamenorca.org/portal.aspx">Saber más</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-part">
+                    <div id="que-es" class="anchor"></div>
+                    <div class="mapa-container"> <span class="quienes-title subpart">¿Qué es?</span>
+
+                        <div class="img-detail"
+                        id="viv-detail" onmouseover="showImg('map-viv-det')" onmouseout="hideImg('map-viv-det')"> <a class="links-to-section" href="#vivero">Vivero</a>
+
+                            <img class="mapa-detail"
+                            id="map-viv-det" alt="Detalle interior vivero" src="assets/images/vivero-render.png"
+                            />
+                        </div>
+                        <img class="mapa-lugar" alt="Esquema de Naturalis" src="assets/images/que-es-1.png"
+                        />
+                        <div class="img-detail" id="pal-detail" onmouseover="showImg('map-pal-det')"
+                        onmouseout="hideImg('map-pal-det')"> <a class="links-to-section" href="#palmarium">Palmarium</a>
+
+                            <img class="mapa-detail"
+                            id="map-pal-det" alt="Detalle interior palmarium" src="assets/images/palmarium-render.png"
+                            />
+                        </div>
+                    </div>
+                    <div class="sections-project">
+                        <div class="section-item first-item">
+                             <h3 class="subtitle-section" id="plaza">Espacio Público</h3>
+
+                            <img class="plaza-img" alt="Plano Plaza" src="assets/images/plaza-captura.png"
+                            />
+                        </div>
+                        <div class="section-item second-item">
+                             <h3 class="subtitle-section" id="vivero">Vivero</h3>
+
+                            <div class="main-content-supart">
+                                <div class="second-part-wrapper" onmouseover="playGif()" onmouseout="stopGif()">
+                                    <img class="axo-vivero" id="main-img-gif" alt="Axioma Vivero" src="assets/images/axo-vivero.png"
+                                    />
+                                    <img class="img-gif" alt="Axioma Vivero" src="assets/images/gif-vivero-normal.gif"
+                                    />
+                                </div>
+                                <img class="corte-section-plaza" alt="Corte Sección" src="assets/images/seccion-2-plaza-captura.png"
+                                />
+                            </div>
+                        </div>
+                        <div class="section-item" id="third-item">
+                             <h3 class="subtitle-section" id="pasarela">Jardín Endémico</h3>
+
+                            <ul class="carrousel-pasarela">
+                                <li class="slide-p showing">
+                                    <img class="pasarela-slide" alt="Pasarela detalle" src="assets/images/pasarela1.png"
+                                    />
+                                </li>
+                                <li class="slide-p">
+                                    <img class="pasarela-slide" alt="Pasarela detalle" src="assets/images/pasarela2.png"
+                                    />
+                                </li>
+                                <li class="slide-p">
+                                    <img class="pasarela-slide" alt="Pasarela detalle" src="assets/images/pasarela3.png"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section-item fourth-item">
+                             <h3 class="subtitle-section" id="catalogo">CATÁLOGO</h3>
+
+                            <div class="catalogo-container">
+                                <img class="catalogo-img" alt="catalogo de flores" src="assets/images/catalogo.png"
+                                />
+                            </div>
+                        </div>
+                        <div class="section-item fifth-item">
+                             <h3 class="subtitle-section" id="palmarium">Palmarium</h3>
+
+                            <div class="container-sect">
+                                <ul class="carrousel-palmarium">
+                                    <li class="slide-palma showing">
+                                        <img class="palmarium-slide" alt="bioma palmarium" src="assets/images/logo1.png"
+                                        />
+                                    </li>
+                                    <li class="slide-palma">
+                                        <img class="palmarium-slide" alt="bioma palmarium" src="assets/images/logo2.png"
+                                        />
+                                    </li>
+                                    <li class="slide-palma">
+                                        <img class="palmarium-slide" alt="bioma palmarium" src="assets/images/logo3.png"
+                                        />
+                                    </li>
+                                </ul>
+                                <ul class="carousel-stat">
+                                    <li class="pic-slide showing">
+                                        <img class="planos-palma" alt="planos detalle" src="assets/images/palma-1.jpg"
+                                        />
+                                    </li>
+                                    <li class="pic-slide">
+                                        <img class="planos-palma" alt="planos detalle" src="assets/images/palma5.jpg"
+                                        />
+                                    </li>
+                                    <li class="pic-slide">
+                                        <img class="planos-palma" alt="planos detalle" src="assets/images/palma4.jpg"
+                                        />
+                                    </li>
+                                    <li class="pic-slide">
+                                        <img class="planos-palma" alt="planos detalle" src="assets/images/palma7.jpg"
+                                        />
+                                    </li>
+                                    <li class="pic-slide">
+                                        <img class="planos-palma" alt="planos detalle" src="assets/images/palma6.jpg"
+                                        />
+                                    </li>
+                                    <li class="pic-slide">
+                                        <img class="planos-palma" alt="planos detalle" src="assets/images/palma2.png"
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="end">
+                    <img class="hoja" src="assets/images/hojaverde.png" alt="hoja">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <footer>
+                <div class="container-footer">
+                    <div class="btn--footer"> <a class="arrow-footer" href="#"><img src="assets/images/ico-arrow.svg" alt="arrow-up"></a>
+
+                    </div>
+                    <div class="stamp">&copy 2019 María Vadell Rullan</div>
+                    <div class="claim">Nº 17821</div>
+                </div>
+            </footer>
+        </footer>
+        <script type="text/javascript" src="assets/js/main.js"></script>
+    </body>
+
+</html>
