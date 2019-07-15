@@ -79,3 +79,32 @@ function goToASlide(n) {
 }
 
 playPasarelaSlide();
+
+let palmarium = document.querySelectorAll('.carrousel-palmarium .slide-palma');
+let currentPalmarium = 0;
+
+function playPalmariumSlide() {
+  setInterval(nextPalmariumSlide,2000);
+}
+
+function nextPalmariumSlide() {
+  goToPalmSlide(currentPalmarium+1);
+}
+
+function goToPalmSlide(n) {
+  palmarium[currentPalmarium].classList.remove('showing');
+  currentPalmarium = (n+palmarium.length)%palmarium.length;
+  palmarium[currentPalmarium].classList.add('showing');
+}
+
+playPalmariumSlide();
+
+function showImgWide(place){
+  const selectedPlace = document.getElementById(place);
+  selectedPlace.style.opacity = 1;
+}
+
+function hideImgSmall(place){
+  const selectedPlace = document.getElementById(place);
+  selectedPlace.style.opacity = 0;
+}
