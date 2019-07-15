@@ -50,7 +50,7 @@
     left: 0;
 }
 
-ul{
+.carrousel{
     margin: 40px 0px 0px 0px;
     padding: 0px;
     height: 400px;
@@ -302,12 +302,14 @@ ul{
 
 .sections-project{
     font-family: $title-font;
+    margin-top: 30px;
 }
 
 .section-item{
     box-sizing: border-box;
     width: 100%;
-    height: calc(100vh - 44px);
+    margin-top: 10px;
+    min-height: calc(100vh - 44px);
     color: rgb(144,158,137);
 }
 
@@ -315,7 +317,9 @@ ul{
     font-size: 20px;
     padding-left: 20px;
     font-weight: bold;
-    margin: 0;
+    text-transform: uppercase;
+    font-style: oblique;   
+    margin-top: 20px;
 }
 
 .plaza-img{
@@ -323,12 +327,6 @@ ul{
     margin-top: 5%;
     margin-left: 50%;
     transform: translate(-50%);
-}
-
-.main-content-supart{
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    justify-items: center;
 }
 
 .first-part-wrapper{
@@ -368,11 +366,22 @@ ul{
     margin-left: 35%;
 }
 
+.main-content-supart {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .second-part-wrapper{
+    box-sizing: border-box;
     height: 500px;
-    width: 300px;
+    width: 290px;
     position: relative;
-    border: 1px solid $color-theme;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #main-img-gif{
@@ -383,24 +392,68 @@ ul{
     opacity: 1;
 }
 
-.corte-section{
-    width: 1100px;
-    height: 250px;
-}
-
 .corte-section-plaza{
     width: 100%;
-    margin-top: 100px;
-    height: 220px;
     border: 2px solid $color-theme;
+}
+
+#third-item{
+    margin-top: 60px;
 }
 
 .img-gif {
     position: absolute;
     height: 500px;
-    left: -200px;
-    top: 100px;
+    right: 60%;
+    top: 50px;
     border: 8px solid rgba(235,73,8,0.5);
     opacity: 0;
     z-index: 1;
+}
+
+.pasarela-slide {
+    box-sizing: border-box;
+    width: 825px;
+    height: 500px;
+}
+
+.carrousel-pasarela{
+    margin: 20px 0px 0px 0px;
+    padding: 0px;
+    height: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+
+    li{
+        list-style: none;
+        overflow: hidden;
+        position: absolute;
+        left: 200px;
+        width: 100%;
+        height: 500px;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 1s;
+    }
+
+    .showing {
+        opacity: 1;
+        z-index: 2;
+    }
+}
+
+.catalogo-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.catalogo-img{
+    width: 100%;
 }

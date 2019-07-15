@@ -60,3 +60,22 @@ function stopGif() {
   const gifImg = document.querySelector('.img-gif');
   gifImg.style.opacity = 0;
 }
+
+let pasarela = document.querySelectorAll('.carrousel-pasarela .slide-p');
+let currentPasarela = 0;
+
+function playPasarelaSlide() {
+  setInterval(nextPasarelaSlide,2000);
+}
+
+function nextPasarelaSlide() {
+  goToASlide(currentPasarela+1);
+}
+
+function goToASlide(n) {
+  pasarela[currentPasarela].classList.remove('showing');
+  currentPasarela = (n+pasarela.length)%pasarela.length;
+  pasarela[currentPasarela].classList.add('showing');
+}
+
+playPasarelaSlide();
