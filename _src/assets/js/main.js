@@ -99,12 +99,21 @@ function goToPalmSlide(n) {
 
 playPalmariumSlide();
 
-function showImgWide(place){
-  const selectedPlace = document.getElementById(place);
-  selectedPlace.style.opacity = 1;
+let stat = document.querySelectorAll('.carousel-stat .pic-slide');
+let currentstat = 0;
+
+function playstatSlide() {
+  setInterval(nextstatSlide, 2000);
 }
 
-function hideImgSmall(place){
-  const selectedPlace = document.getElementById(place);
-  selectedPlace.style.opacity = 0;
+function nextstatSlide() {
+  goToStatSlide(currentstat+1);
 }
+
+function goToStatSlide(n) {
+  stat[currentstat].classList.remove('showing');
+  currentstat = (n+stat.length)%stat.length;
+  stat[currentstat].classList.add('showing');
+}
+
+playstatSlide();
