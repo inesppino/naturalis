@@ -232,15 +232,64 @@ ul{
 }
 
 .mapa-lugar{
-    width: 70%;
+    height: 80vh;
     margin-right: 50px;
 }
 
 .mapa-container{
+    position: relative;
     width: 100%;
-    margin-top: 60px;
+    height: 100vh;
+    margin-top: 80px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
+}
+
+.links-to-section{
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    height: 200px;
+}
+
+.img-detail{
+    width: 50px;
+    height: 200px;
+    position: absolute;
+    cursor: pointer;
+
+    .map-viv{
+        position: absolute;
+        left: 200%;
+        z-index: 2;
+    }
+
+    .map-pal{
+        position: absolute;
+        height: 600px;
+        right: 150%;
+        top: 15%
+    }
+}
+
+#pal-detail{
+    left: 59%;
+    top: -5px;
+}
+
+#viv-detail{
+    left: 12%;
+    top: 25%;
+}
+
+.mapa-detail{
+    width: 0px;
+    height: 0px;
+}
+
+#map-viv-det{
+    width: 600px;
 }
 
 .subtitle-section{
@@ -254,11 +303,21 @@ ul{
 
 .section-item{
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    color: rgb(144,158,137);
+}
+
+.subtitle-section{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.first-item{
+    height: 100vh;
 }
 
 .plaza-img{
-    width: 80%;
+    height: 80vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
