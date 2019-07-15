@@ -241,7 +241,7 @@ ul{
     width: 100%;
     height: 100vh;
     margin-top: 80px;
-    margin-bottom: 20px;
+
     display: flex;
     justify-content: center;
 }
@@ -267,9 +267,9 @@ ul{
 
     .map-pal{
         position: absolute;
-        height: 600px;
+        height: 550px;
         right: 150%;
-        top: 15%
+        top: 5%
     }
 }
 
@@ -279,7 +279,7 @@ ul{
 }
 
 #viv-detail{
-    left: 12%;
+    left: 13%;
     top: 25%;
 }
 
@@ -298,26 +298,100 @@ ul{
 
 .sections-project{
     font-family: $title-font;
-    margin-top: 40px;
 }
 
 .section-item{
     width: 100%;
+    height: 100vh;
     color: rgb(144,158,137);
 }
 
 .subtitle-section{
     font-size: 20px;
     font-weight: bold;
-    margin: 20px 0px;
-}
-
-.first-item{
-    height: 100vh;
 }
 
 .plaza-img{
     height: 80vh;
+    margin-top:30px;
     margin-left: 50%;
     transform: translateX(-50%);
+}
+
+.main-content-supart{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    justify-items: center;
+}
+
+.first-part-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-subsection {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.salto-5{
+    margin-left: 53%;
+}
+
+.salto-4{
+    margin-left: 50%;
+}
+
+.salto-3{
+    margin-left: 45%;
+}
+
+.salto-2{
+    margin-left: 40%;
+}
+
+.salto-1{
+    margin-left: 35%;
+}
+
+.second-part-wrapper{
+    height: 500px;
+    width: 300px;
+    position: relative;
+    border: 1px solid $color-theme;
+}
+
+#main-img-gif{
+    height: 500px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.corte-section{
+    width: 80%;
+}
+
+.corte-section-plaza{
+    width: 100%;
+    margin-left: -15px;
+    height: 220px;
+    border: 2px solid $color-theme;
+}
+
+
+.img-gif {
+    position: absolute;
+    height: 500px;
+    left: -200px;
+    top: 100px;
+    border: 2px solid $color-theme;
+    opacity: 0;
+    z-index: 1;
 }

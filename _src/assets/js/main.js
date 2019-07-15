@@ -50,3 +50,13 @@ function hideImg(place){
     selectedPlace.classList.remove('map-pal');
   }
 }
+
+function playGif() {
+  const gifImg = document.querySelector('.img-gif');
+  gifImg.style.opacity = 1;
+}
+
+function stopGif() {
+  const gifImg = document.querySelector('.img-gif');
+  gifImg.style.opacity = 0;
+}
