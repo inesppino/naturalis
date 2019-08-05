@@ -1,5 +1,15 @@
 'use strict';
 
+function showMenuHeader() {
+  const navHeader = document.getElementById('nav-header');
+  navHeader.classList.add('menu-nav');
+}
+
+function closeMenuHeader() {
+  const navHeader = document.getElementById('nav-header');
+  navHeader.classList.remove('menu-nav');
+}
+
 let slides = document.querySelectorAll('.carrousel .slide');
 let currentSlide = 0;
 

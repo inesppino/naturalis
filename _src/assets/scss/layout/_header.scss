@@ -16,22 +16,14 @@ header{
 
 .main-name{
     text-transform: uppercase;
-    line-height: 60px;
+    line-height: 40px;
     margin: 0; 
-    font-size: 24px;
+    font-size: 20px;
     cursor: pointer;
 }
 
 nav{
-    width: 500px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    line-height: 45px;
-    font-size: 20px;
-    
+    display: none;
 }
 
 a{
@@ -43,4 +35,62 @@ a{
         color: #000000;
         font-weight: bold;
     } 
+}
+
+img {
+    cursor: pointer;
+    width: 16px;
+    height: 14px;  
+}
+
+.btn--exit{
+    position: fixed;
+    top: 0px;
+    right: 11px;
+    padding: 5px;
+    width: 22px;
+    height: 18px;
+}
+
+.menu-nav {
+    background-color: $color-theme;
+    border: solid 1px $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    height: 160px;
+}
+
+@media all and (min-width: 768px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main-name{
+        line-height: 60px;
+        font-size: 24px;
+    }
+
+    nav{
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        line-height: 45px;
+        font-size: 20px;
+    }
+
+
+    img {
+      display: none;  
+    }
 }
